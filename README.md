@@ -2,24 +2,34 @@
 
 # TypeScript/React/Redux Starter
 
-This is the initial version of our starter project using React, TypeScript and Webpack to tie it all together.
+This is an example app built with Typescript, React, Redux, and Webpack. We use it 
+internally as a teaching tool and platform for trying out architectural ideas.
+
+It is maintained on an ad-hoc basis, your mileage may vary.
+
+You can see it in action here: typescript-react-redux-example.herokuapp.com.
 
 ## npm scripts
+
+> To see all available scripts:
+```bash
+$ npm run
+```
 
 ### Dev
 ```bash
 $ npm run dev
 ```
-
-This runs a development mode server with live reload etc.
+This runs a development mode server with live reload etc. Linter warnings will
+be displayed with each reload.
 
 Open `http://localhost:8080` in your browser.
 
 ### Production
 
 ```bash
-npm install
-npm start
+$ npm install
+$ npm start
 ```
 
 This runs a production-ready express server that serves up a bundled and
@@ -27,19 +37,26 @@ minified version of the client.
 
 Open `http://localhost:8080` in your browser.
 
-> Note: Demo username/password can be found [here](https://github.com/rangle/typescript-react-redux-starter/blob/master/server/users.json)
-
 ### Tests
 
-#### Single Run
+#### Single Run (with linting and coverage)
 ```bash
-$ npm run test
+$ npm test
+# or
+$ npm t
 ```
 
 #### Watch Files
 ```bash
 $ npm run test:watch
 ```
+
+#### Linting
+```bash
+$ npm run lint
+```
+This will run both code and style linters, but you can run them individually 
+using `npm run lint-ts` and `npm run lint-css`.
 
 #### Coverage
 ```bash
@@ -56,23 +73,9 @@ Edit [this file](server/proxy-config.js) to mount such APIs at a given path.
 
 ## Improvements
 
-This is an initial version of this setup and will be expanded in the future. Refer to the [issues section](https://github.com/rangle/rangle-starter/issues) to see what needs to be done, or create a [new one](https://github.com/rangle/rangle-starter/issues/new).
-
-Issues for this particular starter project are tagged with the 'ts-react' label.
-
-### Planned work
-
-* Fix/ReOrg BassCSS styles
-* Test examples (unit)
-* Component `displayName`, `defaultProps` and documentation
-
-## If something doesn't work
-
-We centralize issue management for all rangle starters in the [rangle-starter](https://github.com/rangle/rangle-starter) repository, to help us keep things consistent.
-
-Refer to the [issues section](https://github.com/rangle/rangle-starter/issues) to see if this has already been logged. Otherwise create a [new issue](https://github.com/rangle/rangle-starter/issues/new).
-
-Be sure to tag your new issue with the 'ts-react' label so we can see which starter you're filing it for.
+This is an initial version of this setup and will be expanded in the future.
+Refer to the [issues section](https://github.com/rangle/angular2-redux-example/issues)
+to see what needs to be done, or create a [new one](https://github.com/rangle/angular2-redux-example/issues/new).
 
 ## License
 

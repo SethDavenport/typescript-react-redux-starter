@@ -1,5 +1,5 @@
-import 'babel-polyfill';
-
+import 'core-js/es6';
+import 'core-js/es5';
 import 'ts-helpers';
 
 import * as React from 'react';

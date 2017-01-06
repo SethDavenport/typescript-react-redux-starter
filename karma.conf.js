@@ -11,6 +11,8 @@ module.exports = (config) => {
   const coverage = config.singleRun ? ['coverage'] : [];
 
   config.set({
+    mime: { 'text/x-typescript': ['ts', 'tsx'] },
+
     frameworks: [
       'jasmine',
     ],
@@ -109,10 +111,10 @@ function combinedLoaders() {
     case 'istanbulInstrumenter':
     case 'tslint':
       return aggregate;
-    case 'tsx':
+   /* case 'tsx':
       return aggregate.concat([ // force inline source maps
         Object.assign(loaders[k],
-          { query: { babelOptions: { sourceMaps: 'both' } } })]);
+          { query: { babelOptions: { sourceMaps: 'both' } } })]);*/
     default:
       return aggregate.concat([loaders[k]]);
     }
